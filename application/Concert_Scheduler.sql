@@ -18,19 +18,3 @@ CREATE TABLE Client
  [Password] VARCHAR(200) NOT NULL,
  Constraint PK3 Primary Key (Username)
 );
-
-CREATE TABLE SuperCennik
-(
- Username VARCHAR(30) NOT NULL,
- Summary INTEGER,
- Constraint PK2 Primary Key (Username),
- Constraint FK1 Foreign Key (Username) REFERENCES Client (Username)
-);
-
-DROP TABLE SuperCennik;
-
-SELECT * FROM Occupation ORDER BY Kog, Tstp;
-
-SELECT * FROM Client;
-
-DELETE FROM Occupation;
