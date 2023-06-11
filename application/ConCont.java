@@ -55,7 +55,7 @@ public class ConCont implements Initializable{
 	public void Proceed(ActionEvent event){
 		
 		/* Input information */
-		String reason = Reason.getText(); // Why you need the concert hall?
+		String reason = Reason.getText().replace("'", "''"); // Why you need the concert hall?
 		try {
 			int hour = (int) WhatTime.getValue(); // What time of the day?
 			String Time = hour + ":00"; // giving an appropriate format for the time
